@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // Set the static files path to public.
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set the default view engine to html.
+// Set the server-side view engine to html. Currently unused.
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
@@ -30,7 +30,6 @@ var PORT = process.env.PORT || 3000;
 *********************************************************************/
 
 // Register router for api.
-app.use('/', require('./server/pages/router'));
 app.use('/api', require('./server/api/router'));
 
 
