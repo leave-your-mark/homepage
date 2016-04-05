@@ -3,7 +3,7 @@
 
 ### Setup and Installation
 
-```
+```bash
 # Install dependencies.
 npm install -g nodemon
 npm install
@@ -11,7 +11,7 @@ npm install
 # Start the express server.
 nodemon app.js
 
-# Visit your browser at.
+# Visit your browser at:
 http://localhost:3000
 ```
 
